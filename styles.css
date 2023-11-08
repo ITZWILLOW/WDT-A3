@@ -1,0 +1,272 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cfababbd;
+
+}
+
+header {
+    background-color: #4e868d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+    .logo {
+        width: 100px;
+        /* Adjust the width as needed */
+        height: auto;
+        align-self: left;
+        border-radius: 50%
+    }
+
+
+}
+
+
+
+header h1 {
+    font-size: 3;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 30px;
+
+
+
+}
+
+nav ul {
+    list-style: upper-roman;
+    padding: 1;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+nav .search-bar {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+nav .search-bar form {
+    display: flex;
+}
+
+nav .search-bar input[type="text"] {
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+nav .search-bar input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #ffffffbd;
+    font-weight: bold;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #FF0000;
+    transition: 0.2s;
+}
+
+
+main {
+    padding: 33px;
+
+    main {
+        padding: 20px;
+    }
+
+    .latest-update {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .latest-update h2 {
+        color: #333;
+    }
+
+    .update-content {
+        margin-bottom: 20px;
+    }
+
+    .update-content h3 {
+        color: #333;
+    }
+
+    .update-content p {
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    .date {
+        color: #777;
+        font-size: 0.9em;
+    }
+
+    chat-section {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .chat-box {
+        height: 200px;
+        border: 1px solid #ccc;
+        overflow-y: scroll;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .chat-message {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .user-avatar {
+        width: 40px;
+        height: 40px;
+        background-color: #333;
+        border-radius: 50%;
+    }
+
+    .message-content {
+        background-color: #f8f8f8;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+
+    .message-input {
+        display: flex;
+    }
+
+    .message-input input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .message-input button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+    }
+
+
+
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .slide img {
+        width: 40%;
+        /* Make sure the image takes up 100% of the container width */
+        height: auto;
+        /* Allow the height to adjust proportionally */
+    }
+
+    .slide {
+        transition: opacity 1s ease-in-out;
+    }
+
+
+}
+
+h2 {
+    color: #e74c3c;
+}
+
+p {
+    color: #555;
+}
+
+button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

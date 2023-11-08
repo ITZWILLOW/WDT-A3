@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEPAGE</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="images.jpg/logo.jpg" alt="Logo" class="logo">
+        <h1>NOURISH LINK</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">User Registration</a></li>
+                <li><a href="#">Login</a></li>
+                <li class="search-bar">
+                    <form action="/search" method="get">
+                        <input type="text" name="q" placeholder="Search...">
+                    </form>
+                    <input type="submit" value="Search" onclick="showPopup('searchPopup')">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="popup" id="searchPopup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="hidePopup('searchPopup')">&times;</span>
+            <h2>Search Bar Status</h2>
+            <p>The search bar is currently a work in progress. Thank you for your understanding.</p>
+        </div>
+    </div>
+
+    <main>
+        <section class="latest-update">
+            <h2>Latest Update</h2>
+            <div class="update-content">
+                <h3>Crisis in Gaza</h3>
+                <p>using the latest figues, nearly 2.3 miillion of the residents of gaza required food in the ongoing
+                    humanatarian crisis in Palestine , with your help we will be able to provide basic food and water to
+                    the helpless.</p>
+                <span class="date">November 16, 2023</span>
+            </div>
+        </section>
+        <section>
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="images.jpg/newsImg.jpg" alt="Slide1">
+                    <div class="text">UN distrabution of rice</div>
+                </div>
+
+                <div class="slide fade">
+                    <img src="images.jpg/newsImg2.jpg" alt="Slide2">
+                    <div class="text">Palestinan women cooking</div>
+                </div>
+
+                <div class="slide fade">
+                    <img src="images.jpg/newsImg3.jpg" alt="Slide3">
+                    <div class="text">bread and coca cola distrabution from the palestine food bank</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <script src="script.js"></script>
+        </section>
+        <section class="chat-section">
+            <h2>Chat with Us</h2>
+            <div class="chat-box">
+                <div class="chat-message">
+                    <div class="user-avatar"></div>
+                    <div class="message-content">
+                        <p>Hello! How can we help you?</p>
+                    </div>
+                </div>
+                <!-- More messages can be added here -->
+            </div>
+            <div class="message-input">
+                <input type="text" placeholder="Type your message...">
+                <button>Send</button>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <link href=" homepage2.html">
+        <p>&copy; 2023 Willow</p>
+    </footer>
+</body>
+
+</html>
